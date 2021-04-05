@@ -1,0 +1,6 @@
+<h1>새 일기를 쓰는 곳</h1>
+
+<form method="POST" class="post-form"> {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">저장하기</button>
+</form>
